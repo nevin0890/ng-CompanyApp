@@ -44,6 +44,9 @@ export class ApiService {
   updateSecurity = (data: any) => {
     return this.http.post('http://localhost:8080/securityUpdate', data)
   }
+  addLeave = (data: any) => {
+    return this.http.post('http://localhost:8080/addLeave', data)
+  }
   viewLeaves = () => {
     return this.http.get('http://localhost:8080/viewLeave')
   }

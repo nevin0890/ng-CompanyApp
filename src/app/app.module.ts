@@ -22,6 +22,7 @@ import { AddSecurityComponent } from './add-security/add-security.component';
 import { ViewSecurityComponent } from './view-security/view-security.component';
 import { SearchSecurityComponent } from './search-security/search-security.component';
 import { LeaveRequestComponent } from './leave-request/leave-request.component';
+import { LeaveStatusComponent } from './leave-status/leave-status.component';
 
 
 const routes: Routes = [
@@ -39,6 +40,8 @@ const routes: Routes = [
   { path: 'addsecurity', component: AddSecurityComponent },
   { path: 'viewsecurity', component: ViewSecurityComponent },
   { path: 'searchsecurity', component: SearchSecurityComponent },
+  { path: 'leave', component: LeaveRequestComponent },
+  { path: 'leavestatus', component: LeaveStatusComponent },
   
 
  
@@ -65,7 +68,8 @@ const routes: Routes = [
     AddSecurityComponent,
     ViewSecurityComponent,
     SearchSecurityComponent,
-    LeaveRequestComponent
+    LeaveRequestComponent,
+    LeaveStatusComponent
   ],
   imports: [
     BrowserModule,

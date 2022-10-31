@@ -1,0 +1,30 @@
+<app-adminnavbar></app-adminnavbar>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">employee code</th>
+            <th scope="col">Date</th>
+            <th scope="col">Reason</th>
+            <th scope="col">Type</th>
+         
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor=" let i of leave">
+            <th scope="row">1</th>
+            <td>{{i.empcode}}</td>
+            <td>{{i.date}}</td>
+            <td>{{i.reason}}</td>
+            <td>{{i.type}}</td>
+          
+         
+        
+            <td *ngIf="i.status!=='Pending'">
+                <span [ngClass]="i.status === 'Rejected' ? 'bg-danger' : 'bg-success'">{{i.status}}</span>
+            </td>
+        </tr>
+
+    </tbody>
+</table>
