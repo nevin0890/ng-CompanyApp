@@ -1,1 +1,29 @@
+
 <app-adminnavbar></app-adminnavbar>
+<table class="table">
+    <thead>
+        <tr >
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor=" let i of leave">
+            <th scope="row">1</th>
+            <td>{{i.empcode}}</td>
+            <td>{{i.date}}</td>
+            <td>{{i.reason}}</td>
+            <td>{{i.type}}</td>
+            <td *ngIf="i.status==='Pending'">
+                <button class="btn btn-outline-success" (click)='updateLeave(i.id, "Approved")'>Approve</button>
+                <button class="btn btn-outline-danger" (click)='updateLeave(i.id, "Rejected")'>reject</button>
+            </td>
+            <td *ngIf="i.status!=='Pending'">
+                <span [ngClass]="i.status === 'Rejected' ? 'bg-danger' : 'bg-primary'">{{i.status}}</span>
+            </td>
+        </tr>
+     
+    </tbody>
+</table>

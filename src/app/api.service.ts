@@ -14,4 +14,35 @@ export class ApiService {
   securityLogin = (data: any) => {
     return this.http.post('http://localhost:8080/securityLogin', data)
   }
+  addEmployee = (data: any) => {
+    return this.http.post('http://localhost:8080/addemployee', data)
+  }
+  viewEmployee = () => {
+    return this.http.get('http://localhost:8080/employeeview')
+  }
+  deleteEmployee = (id: any) => {
+    return this.http.post('http://localhost:8080/deleteemployee',id)
+  }
+  searchEmployee = (data: any) => {
+    return this.http.post('http://localhost:8080/searchemployee', data)
+  }
+  updateEmployee = (data: any) => {
+    return this.http.post('http://localhost:8080/updateemployee', data)
+  }
+  addSecurity = (data: any) => {
+    return this.http.post('http://localhost:8080/securityAdd', data)
+  }
+  viewSecurity = () => {
+    return this.http.get('http://localhost:8080/securityView')
+  }
+  deleteSecurity = (id: any) => {
+    return this.http.post('http://localhost:8080/securityDelete', id)
+  }
+  viewLeaves = () => {
+    return this.http.get('http://localhost:8080/viewLeave')
+  }
+  updateLeave = (data: any) => {
+    return this.http.post('http://localhost:8080/updateleave', data)
+  }
+
 }

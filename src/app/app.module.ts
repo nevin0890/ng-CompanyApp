@@ -14,6 +14,13 @@ import { EmployeeloginComponent } from './employeelogin/employeelogin.component'
 import { SecurityloginComponent } from './securitylogin/securitylogin.component';
 import { EmployeehomeComponent } from './employeehome/employeehome.component';
 import { SecurityhomeComponent } from './securityhome/securityhome.component';
+import { EmployeeAddComponent } from './employee-add/employee-add.component';
+import { EmployeeViewComponent } from './employee-view/employee-view.component';
+import { EmployeeSearchComponent } from './employee-search/employee-search.component';
+import { TestingComponent } from './testing/testing.component';
+import { AddSecurityComponent } from './add-security/add-security.component';
+import { ViewSecurityComponent } from './view-security/view-security.component';
+import { SearchSecurityComponent } from './search-security/search-security.component';
 
 
 const routes: Routes = [
@@ -24,6 +31,17 @@ const routes: Routes = [
   { path: 'employeehome', component: EmployeehomeComponent },
   { path: 'securitylogin', component: SecurityloginComponent },
   { path: 'securityhome', component: SecurityhomeComponent },
+  { path: 'employeeadd', component: EmployeeAddComponent },
+  { path: 'employeeview', component: EmployeeViewComponent },
+  { path: 'employeesearch', component: EmployeeSearchComponent },
+  { path: 'testing', component: TestingComponent },
+  { path: 'addsecurity', component: AddSecurityComponent },
+  { path: 'viewsecurity', component: ViewSecurityComponent },
+  { path: 'searchsecurity', component: SearchSecurityComponent },
+  
+
+ 
+
   
   
 
@@ -38,7 +56,14 @@ const routes: Routes = [
     EmployeeloginComponent,
     SecurityloginComponent,
     EmployeehomeComponent,
-    SecurityhomeComponent
+    SecurityhomeComponent,
+    EmployeeAddComponent,
+    EmployeeViewComponent,
+    EmployeeSearchComponent,
+    TestingComponent,
+    AddSecurityComponent,
+    ViewSecurityComponent,
+    SearchSecurityComponent
   ],
   imports: [
     BrowserModule,
