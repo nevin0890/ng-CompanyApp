@@ -21,6 +21,7 @@ import { TestingComponent } from './testing/testing.component';
 import { AddSecurityComponent } from './add-security/add-security.component';
 import { ViewSecurityComponent } from './view-security/view-security.component';
 import { SearchSecurityComponent } from './search-security/search-security.component';
+import { LeaveRequestComponent } from './leave-request/leave-request.component';
 
 
 const routes: Routes = [
@@ -63,7 +64,8 @@ const routes: Routes = [
     TestingComponent,
     AddSecurityComponent,
     ViewSecurityComponent,
-    SearchSecurityComponent
+    SearchSecurityComponent,
+    LeaveRequestComponent
   ],
   imports: [
     BrowserModule,

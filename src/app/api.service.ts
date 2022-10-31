@@ -38,6 +38,12 @@ export class ApiService {
   deleteSecurity = (id: any) => {
     return this.http.post('http://localhost:8080/securityDelete', id)
   }
+  searchSecurity = (data: any) => {
+    return this.http.post('http://localhost:8080/securitySearch', data)
+  }
+  updateSecurity = (data: any) => {
+    return this.http.post('http://localhost:8080/securityUpdate', data)
+  }
   viewLeaves = () => {
     return this.http.get('http://localhost:8080/viewLeave')
   }
